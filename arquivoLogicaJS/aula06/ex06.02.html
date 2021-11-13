@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+	<h1> Lógica de Programação com Javascript</h1>
+
+	<div id = "output"></div>
+<script>
+	var produtos = [
+	{'nome': 'caneta', 'preco': 2},
+	{'nome': 'lapis', 'preco': 1.2},
+	{'nome': 'borracha', 'preco': 0.5}
+	];
+	
+ 	var msg = '';
+
+//variaveis dentro de um objeto são chamados de propriedades.
+//Método é uma função atrelada a um objeto. 
+// this é uma referência pro próprio objeto
+// Mostrar na tela os dados de produtos, contendo quantidade em estoque e preço. Estes dados estarão agrupados em um array de objetos.
+// {} significa objeto
+ 
+	for(var i = 0; i < produtos.length; i++){
+		console.log(produtos[i].preco);
+
+		msg += '<h2> Produto: ' + produtos[i].nome + '</h2> <br>';
+		msg += '<p> preco: ' + produtos[i].preco + ' </p> <br>'
+
+	}
+
+	
+	document.querySelector('#output').innerHTML = msg;
+
+</script>
+
+</body>
+</html>

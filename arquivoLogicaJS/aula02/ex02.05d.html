@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var play1 = parseInt(prompt("Jogador 1 , digite um número: "));
+
+      var play2 = parseInt(prompt("Jogador 2 , digite um número: "));
+      //se iguais , mostrar mensagem empate
+      if (play2 === play1) {
+        alert("empate");
+      } else {
+
+        //sortear um numero entre 0 e 1
+        var nSorteio = parseInt(Math.random() * 2);
+
+        //se o numero sorteado for 0, ganha quem escolher o numero MENOR
+        // e se o contrário o pĺay 2 ganha pq o sorteado será 1 e play2 será maior
+        if (nSorteio === 0 && play1 < play2) {
+          alert("ganhou play 1");
+        } else {
+          alert("ganhou o play2");
+        }
+      }
+    </script>
+  </body>
+</html>

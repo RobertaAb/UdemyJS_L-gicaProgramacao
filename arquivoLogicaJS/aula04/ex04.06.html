@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lógica de Programação JavaScript</title>
+</head>
+<body>
+	<h1> Lógica de Programação JavaScript</h1>	
+
+	<button onClick = "iniciarCalculo('+')"> + </button>
+	<button onClick = "iniciarCalculo('-')"> - </button>
+	<button onClick = "iniciarCalculo('/')"> / </button>
+	<button onClick = "iniciarCalculo('*')"> * </button>
+
+	<div id="output"></div>
+
+	<script>   
+
+	function iniciarCalculo(simbolo){
+		var n1 
+		= document.querySelector('#output').textContent;
+		//n1 = parseFloat(n1);
+
+		var n2= parseFloat(prompt("Digite um número: "));
+
+		var msg =  calcular(simbolo,n1,n2);
+
+		escreve(msg);
+	}
+	
+	function escreve(mensagem) {
+        var output = document.querySelector('#output');
+        output.innerHTML = mensagem;
+    }
+
+	function calcular(simbolo,n1,n2){
+		var numeroCalculado = null;
+
+	switch(simbolo){
+		case '+':
+			numeroCalculado = n1+n2;
+			break;
+
+		case '-':
+			numeroCalculado = n1-n2;
+			break;
+
+		case '/':
+			numeroCalculado= n1/n2;
+			break;
+
+		case '*':
+			numeroCalculado= n1*n2;
+	}
+
+		return numeroCalculado;
+}
+
+//qdo usa o soma duas vezes seguidas e coloca um numero do lado outro e considera uma casa decimal
+	</script>
+</body>
+</html>

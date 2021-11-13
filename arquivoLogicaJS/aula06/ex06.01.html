@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+	
+	<h1>Lógica de Programação com Javascript</h1>
+	<div id = "output"></div>
+
+<script>
+	
+
+	var dias =  new Array('domingo', 'segunda','terça', 'quarta', 'quinta', 'sexta','sábado');
+
+	var hoje = new Date(); // retorna a data completa
+	var diaSemana = hoje.getDay(); //retorna o dia da semana
+
+	var output = document.querySelector ("#output");
+	
+	alert('Bem vindo, hoje é ...' + dias[diaSemana]);
+	// ou se quiser especificar segue
+	alert(dias[6]);
+
+//dias da semana -> hoje.getDay()
+//0 - domingo
+//1 - segunda
+//...
+//6 - sábado
+
+
+
+
+</script>
+
+</body>
+</html>
