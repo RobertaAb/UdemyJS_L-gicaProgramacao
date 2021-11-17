@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <h1>Jogo de Par e Impar</h1>
+
     <div id="output"></div>
 
     <h1> Jogo do par ou Impar </h1>
@@ -23,7 +23,7 @@
 
     <script>
 
-      var nComputador;
+      var nComputador = '';
       var nJogador = '';
       var minhaEscolha = "par";
 
@@ -32,6 +32,7 @@
       }
       function jogar(){
         nJogador = document.querySelector('#meuNumero').value;
+        nComputador = sortear(5);
         console.log('nComputador', nComputador)
         console.log('nJogador', nJogador)
 
