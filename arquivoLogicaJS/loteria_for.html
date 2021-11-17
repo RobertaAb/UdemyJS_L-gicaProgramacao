@@ -11,15 +11,15 @@
     <div id="output"></div>
 
     <script>
-         function sortear() {
-           return Math.floor(Math.random() * 60);
-         }
-         var sorteados = [];
+               function sortear() {
+                 return Math.floor(Math.random() * 60)
+               }
+               var sorteados = [];
+      //enquanto a array tiver 6 numeros não repetitivos
+            for ( var i =0; i<6;i++){
+              sorteados[i] = sortear()
 
-      for ( var i =0; i<6;i++){
-        sorteados[i] = sortear();
-
-         console.log(sorteados)
+               console.log(sorteados)
     </script>
   </body>
 </html>
