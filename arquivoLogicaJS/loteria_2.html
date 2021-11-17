@@ -16,6 +16,7 @@
       var msg = "";
 
       msg += "<p> numeros sorteados </p>";
+      msg += "<p>" + sorteados.join("") + "</p>";
 
       function obtemNumerosSortidos() {
         var sorteados = [];
@@ -33,6 +34,9 @@
         }
         return sorteados;
       }
+
+      // teste.split ('|') => ele quebra uma string em um array
+      //teste.join (',') => transforma um array em string
     </script>
   </body>
 </html>
