@@ -11,7 +11,7 @@
     <div id="output"></div>
 
     <script>
-      var sorteados = obtemNumerosSortidos;
+      var sorteados = obtemNumerosSortidos();
       var output = document.querySelector("#output");
       var msg = "";
 
@@ -28,6 +28,8 @@
         }
         msg += "</p>";
       }
+
+      output.innerHTML = msg;
 
       function obtemNumerosSortidos() {
         var sorteados = [];
