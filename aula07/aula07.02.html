@@ -11,6 +11,18 @@
   </body>
 
   <script>
+    var msg = "";
+
+    var daniel = {
+      nome: "daniel",
+      sobrenome: "tapias morales",
+      rg: "11.222.333-4",
+      tel: "952121456"
+    };
+
+    for (propriedade in daniel) {
+      console.log(propriedade, ": ", daniel[propriedade]);
+    }
     document.querySelector("#output").innerHTML = msg;
   </script>
 </html>
