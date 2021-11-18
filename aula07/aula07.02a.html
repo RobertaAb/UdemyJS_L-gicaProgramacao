@@ -44,17 +44,17 @@
       "numero ": 10
     };
 
-    var minhaArray = new Array();
+    var minhaArray = new Array(1, 2, 3);
     var hoje = new Date();
     var obj3 = new Object();
     // começa com a letra maiuscula é uma função construtora
-    function Endereco() {
-      this.logradouro = "logradouro qualquer";
-      this.n = 5;
-      this.cep = "0000-000";
+    function Endereco(lo, n, cep) {
+      this.logradouro = log;
+      this.n = n;
+      this.cep = cep;
     }
     //instância de uma classe endereco
-    var endereco1 = new Endereco();
-    var endereco2 = new Endereco();
+    var endereco1 = new Endereco("rua tal", 2, "12345-456");
+    var endereco2 = new Endereco("rua qualquer", 3, "12345-789");
   </script>
 </html>
