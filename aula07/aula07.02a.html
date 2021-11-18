@@ -11,7 +11,7 @@
   </body>
 
   <script>
-    //objeto formal
+    // sintaxe  formal
     var obj = new Object();
     obj.nome = "meu objeto";
     obj.funcao = function () {
@@ -20,6 +20,14 @@
     console.log(obj.nome);
     obj.funcao();
 
-    document.querySelector("#output").innerHTML = msg;
+    // sintaxe literal
+    var obj2 = {
+      nome: "meu objeto 2",
+      funcao: function () {
+        console.log("eu sou o metodo do obj2");
+      }
+    };
+    console.log(obj2.nome);
+    obj2.funcao();
   </script>
 </html>
