@@ -20,6 +20,7 @@
       { nome: "lucia", notas: [2, 1, 8, 5] }
     ];
 
+    var mediaAlunos = 0;
     var msg = "";
 
     for (var i = 0; i < alunos.length; i++) {
@@ -31,8 +32,13 @@
         totalNotas += notas[j];
       }
       var media = totalNotas / notas.length;
+      mediaAlunos += media;
       msg += "<p> A média é:" + media + "</p> <hr>";
     }
+    msg +=
+      "<p> A média de todos os alunos é: " +
+      mediaAlunos / alunos.length +
+      "</p>";
     document.querySelector("#output").innerHTML = msg;
   </script>
 </html>
