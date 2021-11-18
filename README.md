@@ -2,9 +2,6 @@
 curso
 
 
-
-curso
-
 Vetores
 Array uni-dimencional
 nomes = ['Maria', 'João', 'José','Ana']
