@@ -82,8 +82,11 @@
       }
     ];
 
-    var msg = "";
+    var endereco = [];
 
-    document.querySelector("#output").innerHTML = msg;
+    for (var i = 0; i < alunos.length; i++) {
+      enderecos[i] = alunos[i].endereco;
+    }
+    console.log(enderecos);
   </script>
 </html>
