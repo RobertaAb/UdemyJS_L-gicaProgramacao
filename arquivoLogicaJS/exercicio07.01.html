@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <div id="output"></div>
+  </body>
+
+  <script>
+    //matriz
+    var alunos = [
+      { nome: "Maria", notas: [5, 6, 4, 3] },
+      { nome: "José", notas: [2, 8, 5, 6] },
+      { nome: "João", notas: [3, 6, 4, 8] },
+      { nome: "Ana", notas: [2, 8, 4, 9] },
+      { nome: "lucia", notas: [2, 1, 8, 5] }
+    ];
+
+    var msg = "";
+
+    for (var i = 0; i < alunos.length; i++) {
+      msg += "<p><b> " + alunos[i].nome + " </br></p> ";
+      var notas = alunos[i].notas;
+      msg += "<p>notas: " + notas.join("|") + "</p>";
+      var totalNotas = 0;
+      for (var j = 0; j < notas.length; j++) {
+        totalNotas += notas[j];
+      }
+      var media = totalNotas / notas.length;
+      msg += "<p> A média é:" + media + "</p>";
+    }
+    document.querySelector("#output").innerHTML = msg;
+  </script>
+</html>
