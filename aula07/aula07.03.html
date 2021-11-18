@@ -14,10 +14,14 @@
     var nome = ["daniel"];
     var nome2 = nome;
 
-    console.log(nome, nome2);
+    //string, numero e booleano são passados por referência
+    //neste caso nome2 apaonta pro mesmo local do nome
+    console.log(nome);
+    console.log(nome2);
 
-    nome2 = "maria";
+    nome2[0] = "maria";
 
-    console.log(nome, nome2);
+    console.log(nome);
+    console.log(nome2);
   </script>
 </html>
