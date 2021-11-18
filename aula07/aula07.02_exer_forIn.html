@@ -93,11 +93,16 @@
       var endereco = enderecos[i];
 
       for (prop in endereco) {
-        // console.log(prop);
-        //console.log(endereco[prop]);
-        msg += "i: " + i + " , " + prop + " : " + endereco[prop] + "<br>";
+        if (endereco[prop]) {
+          msg += "i: " + " , " + prop + " : " + endereco[prop] + "<br>";
+        }
+        // 1°opção: console.log(prop);
+        //1°opção: console.log(endereco[prop]);
+        // 2°opção:  msg += "i: " + i + " , " + prop + " : " + endereco[prop] + "<br>";
       }
       msg += "<hr>";
     }
+
+    document.querySelector("#output").innerHTML = msg;
   </script>
 </html>
