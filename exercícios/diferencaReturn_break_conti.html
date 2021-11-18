@@ -24,8 +24,20 @@
     var teste = testeSalto();
     console.log(teste);
 
-    //break
+    //break = mesmo que return só que
+    //ele não para a função e sim o loop
+    function testeSalto() {
+      for (var i = 0; i < 10; i++) {
+        if (i === 5) {
+          break;
+        }
+        console.log(i);
+      }
+      return "fim da funcao";
+    }
 
+    var teste = testeSalto();
+    console.log(teste);
     //continue = faz ele voltar para o loop
     function testeSalto() {
       for (var i = 0; i < 10; i++) {
