@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <div id="output"></div>
+  </body>
+
+  <script>
+    //return - sai da função
+    function testeSalto() {
+      for (var i = 0; i < 10; i++) {
+        console.lo(i);
+        if (i === 5) {
+          return "fim da funcao";
+        }
+      }
+    }
+
+    var teste = testeSalto();
+    console.log(teste);
+
+    //break
+
+    //continue = faz ele voltar para o loop
+    function testeSalto() {
+      for (var i = 0; i < 10; i++) {
+        if (i === 5) {
+          continue;
+        }
+        console.log(i);
+      }
+      return "fim da funcao";
+    }
+
+    var teste = testeSalto();
+    console.log(teste);
+
+    document.querySelector("#output").innerHTML = msg;
+  </script>
+</html>
