@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <h1>Lógica de programação com Javascript (fibonacci)</h1>
+    <h1>Lógica de programação com Javascript (Memorização)</h1>
   </body>
 
   <script>
@@ -42,5 +42,17 @@
     console.log(fibonacci(3));
     console.log(fibonacci(6));
     console.log("chamou 2", chamou2);
+
+    function fibonacci3(n) {
+      chamou3++;
+      cache = cache || {};
+      if (cache[n]) return cache[n];
+      if (n <= 2) return 1;
+      return (cache[n] = fibonacci3(n - 1) + fibonacci3(n - 2));
+    }
+
+    console.log("_______");
+    console.log(fibonacci3(3));
+    console.log("chamou 3", chamou3);
   </script>
 </html>
