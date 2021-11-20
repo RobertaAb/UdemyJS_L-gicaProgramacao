@@ -48,7 +48,8 @@
       cache = cache || {};
       if (cache[n]) return cache[n];
       if (n <= 2) return 1;
-      return (cache[n] = fibonacci3(n - 1) + fibonacci3(n - 2));
+      cache[n] = fibonacci3(n - 1) + fibonacci3(n - 2);
+      return cache[n];
     }
 
     console.log("_______");
